@@ -93,3 +93,66 @@ The second URL corresponded to an admin-UI for lite-server.
 
 I saw this:
 ```bash
+ann@nia111:~/ang2tut20160207 $ npm start
+
+> angular2-quickstart@1.0.0 start /home/ann/ang2tut20160207
+> concurrent "npm run tsc:w" "npm run lite" 
+
+[1] 
+[1] > angular2-quickstart@1.0.0 lite /home/ann/ang2tut20160207
+[1] > lite-server
+[1] 
+[0] 
+[0] > angular2-quickstart@1.0.0 tsc:w /home/ann/ang2tut20160207
+[0] > tsc -w
+[0] 
+[1] [BS] Access URLs:
+[1]  ----------------------------------
+[1]        Local: http://localhost:3000
+[1]     External: http://10.0.2.15:3000
+[1]  ----------------------------------
+[1]           UI: http://localhost:3001
+[1]  UI External: http://10.0.2.15:3001
+[1]  ----------------------------------
+[1] [BS] Serving files from: ./
+[1] [BS] Watching files...
+[0] 8:02:19 AM - Compilation complete. Watching for file changes.
+[1] [BS] File changed: app/hero.js
+[1] [BS] File changed: app/hero-detail.component.js
+[1] [BS] File changed: app/mock-heroes.js
+[1] [BS] File changed: app/hero.service.js
+[1] [BS] File changed: app/app.component.js
+[1] [BS] File changed: app/main.js
+[1] 16.02.05 08:02:20 304 GET /./index.html (Unknown - 32ms)
+[1] 16.02.05 08:02:21 304 GET /app/main.ts (Unknown - 13ms)
+[1] 16.02.05 08:02:21 304 GET /app/app.component.ts (Unknown - 33ms)
+[1] 16.02.05 08:02:22 404 GET /favicon.ico (Unknown - 23ms)
+[1] 16.02.05 08:02:22 304 GET /app/hero-detail.component.ts (Unknown - 7ms)
+[1] 16.02.05 08:02:22 304 GET /app/hero.service.ts (Unknown - 7ms)
+[1] 16.02.05 08:02:22 304 GET /app/mock-heroes.ts (Unknown - 58ms)
+```
+
+Also it brought up a browser and displayed the same content I saw at this URL:
+
+https://angular.io/resources/live-examples/toh-4/ts/plnkr.html
+
+So, that convinced me I was on the right track.
+
+Next, I removed some files so I could start the tutorial:
+```bash
+cd ~/ang2tut20160207/
+rm index.html
+rm -rf app
+mkdir  app
+```
+
+Then, by hand, I copied in the three files from this URL:
+
+https://angular.io/resources/live-examples/quickstart/ts/plnkr.html
+
+Next, I followed the tutorial at this URL:
+
+https://angular.io/docs/ts/latest/tutorial
+
+If you have questions, e-me: bikle101@gmail.com
+
