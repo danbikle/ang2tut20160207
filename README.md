@@ -76,7 +76,20 @@ Then I did this:
 ```bash
 cd ~ann
 git clone https://github.com/danbikle/ang2tut20160207
-cd  ang2tut201602
+cd  ang2tut20160207
 npm install
 npm start
 ```
+
+The console indicated that lite-server was serving at two URLs:
+
+http://localhost:3000
+
+http://localhost:3001
+
+The first URL corresponded to my Angular2 app.
+
+The second URL corresponded to an admin-UI for lite-server.
+
+I saw this:
+```bash
